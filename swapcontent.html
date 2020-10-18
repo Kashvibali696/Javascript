@@ -1,0 +1,26 @@
+<html>
+<head>
+     <tittle> Swap Content</tittle>
+     <style type="text/css">
+    P{
+        border:lpx solid black;
+    }
+    
+     </style>
+</head>
+<body>
+     <p id="para1">Javascript</p>
+     <p id="para2">Python</p>
+     <button id="btn">swap content</button>
+      <script type="text/javascript">
+        document.getElementById('btn').addEventListener('click',function(){
+     p1=  document.getElementById('para1');
+     p2=  document.getElementById('para2');
+     p1content =p1.innerText;
+     p2content =p2.innerText;
+     p1.innerText=p2content;
+     p2.innerText=p1content;
+      });
+    </script>
+</body>
+</html>
